@@ -21,6 +21,17 @@ CartManage.prototype={
                 id
             }
         }
+    },
+    UpdToCart(id,product,number,money){
+        return{
+            id:id,
+            type:UPD_TO_CART,
+            payload:{
+                product,
+                number,
+                money
+            }
+        }
     }
 }
 export default CartManage;

@@ -24,11 +24,5 @@ const allReducer = {
 const rootReducer = combineReducers(allReducer)
 const store = createStore(rootReducer)
 export default store
-// let undispatchar = store.subscribe(() => {
-//     console.log(store.getState());
-// });
-// store.dispatch(new CartManage().AddToCart(3, 'MSI微星笔记本', 1, 30));
-// store.dispatch(new CartManage().DelToCart(2));
-// undispatchar();
 
 

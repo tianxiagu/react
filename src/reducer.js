@@ -29,6 +29,16 @@ export const cartReducer=(state=InitDefaultState,action)=>{
                 }
             })
             return state;
+        break;
+        case UPD_TO_CART:
+            state.cart.map((item, index) => {
+                if(item.id===action.id){
+                    state.cart[index]=action.payload;
+                    state.cart[index].id=item.id;
+                }
+            })
+            return state;
+        break;    
         default:
             return state;
     }
